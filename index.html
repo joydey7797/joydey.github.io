@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my practiceset</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: aliceblue;
+      }
+      header {
+        background-color: rgba(19, 18, 18, 0.719);
+        color: white;
+      }
+      li {
+        list-style: square white;
+      }
+      .one {
+        margin: auto;
+        position: absolute;
+        left: 20vh;
+        top: 40vh;
+        display: inline-block;
+      }
+      .box {
+        display: inline-block;
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        background-color: antiquewhite;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        top: 30vh;
+        right: 40vh;
+        border-radius: 3px;
+      }
+      h3 {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 25px;
+      }
+      .label {
+        position: relative;
+        top: 40px;
+        left: 7px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .label input {
+        width: 90%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 6px;
+      }
+      .button {
+        position: absolute;
+        text-align: center;
+        width: 95%;
+        top: 250px;
+      }
+      .button input {
+        width: 100%;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 6px;
+        font-size: 20px;
+        background-color: rgba(0, 106, 255, 0.854);
+        color: white;
+        font-weight: bold;
+      }
+      .alert {
+        position: absolute;
+        bottom: 80px;
+        margin-left: 130px;
+      }
+      .alert label {
+        text-align: center;
+        margin: auto;
+      }
+      .newac {
+        position: absolute;
+        text-align: center;
+        width: 95%;
+        bottom: 20px;
+      }
+      .newac input {
+        width: 100%;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 6px;
+        font-size: 20px;
+        background-color: rgba(17, 218, 10, 0.717);
+        color: white;
+        font-weight: bold;
+      }
+      footer {
+        background-color: rgba(19, 18, 18, 0.719);
+        color: white;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        height: 40px;
+        width: 100%;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>home</li>
+          <li>about</li>
+          <li>contact</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="one">
+        <img
+          src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+          alt="facebook"
+          width="334px"
+        />
+      </div>
+      <div class="box">
+        <form action="form.php">
+          <caption>
+            <h3>account login page</h3>
+          </caption>
+          <div class="label">
+            <label for="username"
+              >Username :
+              <br />
+              <input
+                type="text"
+                placeholder="enter email or mobile number"
+                id="unsername"
+                name="username"
+              />
+              <br />
+            </label>
+            <label for="password"
+              >password :
+              <br />
+              <input
+                type="password"
+                minlength="8"
+                name="password"
+                id="password"
+                placeholder="enter your password"
+              />
+              <br />
+            </label>
+          </div>
+          <!-- <label for="alert"> password must containt combination of letter, number , at least one unppercase and one special character</label> -->
+          <div class="button">
+            <input type="submit" value="log in" />
+          </div>
+          <div class="alert">
+            <label for="forget password">
+              <a href="https://youtu.be/dQw4w9WgXcQ?si=zfpOqvLVOmm0bU4m"
+                >forgotten password?</a
+              >
+            </label>
+          </div>
+          <div class="newac">
+            <input type="submit" value="create new account" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      copyright &copy; All rights are reserved expect facebook logo to
+      <big>JOY DEY</big>
+    </footer>
+  </body>
+</html>
